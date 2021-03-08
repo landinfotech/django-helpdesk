@@ -101,6 +101,11 @@
                             <h4>{% trans "Description" %}</h4>
                             {{ ticket.get_markdown|urlizetrunc:50|num_to_link|linebreaksbr }}</td>
                     </tr>
+                    <tr>
+                        <td id="extra-description" colspan='4'>
+                            {% include "helpdesk/ticket_desc_extra_table.html" %}
+                        </td>
+                    </tr>
 
                     {% if ticket.resolution %}<tr>
                         <th colspan='2'>{% trans "Resolution" %}{% if "Resolved" == ticket.get_status_display %} <a href='?close'><button type="button" class="btn btn-warning btn-sm">{% trans "Accept and Close" %}</button></a>{% endif %}</th>
