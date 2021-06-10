@@ -36,12 +36,12 @@
 {#            {% endif %}#}
 {#          </div>#}
 {#        </li>#}
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'helpdesk:submit' %}">
-            <i class="fas fa-fw fa-plus-circle"></i>
-            <span>{% trans "New Ticket" %}</span>
-          </a>
-        </li>
+{#        <li class="nav-item">#}
+{#          <a class="nav-link" href="{% url 'helpdesk:submit' %}">#}
+{#            <i class="fas fa-fw fa-plus-circle"></i>#}
+{#            <span>{% trans "New Ticket" %}</span>#}
+{#          </a>#}
+{#        </li>#}
         <li class="nav-item">
           <a class="nav-link" href="{% url 'helpdesk:report_index' %}">
             <i class="fas fa-fw fa-chart-area"></i>
@@ -64,12 +64,12 @@
             <span>{% trans "Homepage" %}</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'helpdesk:submit' %}">
-            <i class="fas fa-fw fa-plus-circle"></i>
-            <span>{% trans "New Ticket" %}</span>
-          </a>
-        </li>
+{#        <li class="nav-item">#}
+{#          <a class="nav-link" href="{% url 'helpdesk:submit' %}">#}
+{#            <i class="fas fa-fw fa-plus-circle"></i>#}
+{#            <span>{% trans "New Ticket" %}</span>#}
+{#          </a>#}
+{#        </li>#}
         {% if helpdesk_settings.HELPDESK_KB_ENABLED %}
         <li class="nav-item">
           <a class="nav-link" href="{% url 'helpdesk:kb_index' %}">
